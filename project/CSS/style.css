@@ -1,0 +1,173 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:#0A143A;
+}
+.container{
+    max-width:1146px; /*максимальная ширина*/ 
+    margin: auto; /*автоматическое выравнивание по середине*/   
+}
+.header {
+    padding-top: 30px;    
+    padding-bottom: 30px; 
+    margin-bottom: 12px;   
+}
+.navbar{
+    display: flex;/* делаем гибкий блок*/ 
+    align-items: center;/*выравниваем по вертикали по центру*/ 
+    justify-content: space-between;/* разбрасать элементы по краям*/ 
+    margin-bottom: 24px;
+}
+.navbar-menu{
+    margin-right: auto;/*автоматический отстут справа*/
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 22px;
+    padding-right: 22px;
+    display: flex;
+}
+/* для всех пунктов меню, кроме последнего */
+.menu-item:not(:last-child){
+    margin-right: 14px; /*щтступ справа 14пикселей*/
+}
+.menu-link{
+    text-decoration: none;
+    color: inherit;/*возьми цвет кнопки как у родителя*/
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.button-link {
+    color:inherit;
+}
+.button-primary{
+background-color: #256eeb;
+border-radius: 5px;
+color: white;
+}
+.search-panel{
+    height: 50px;
+    background-color: #256eeb;
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+}
+.search-input{
+    flex-grow: 1;/*растягивается на все свободное место*/
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;/*отключаем обводку*/
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.search-button{
+    background: #256eeb;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 17px;
+    display: flex;
+    align-items: center;
+}
+.search-button.text{
+    margin-left: 5px;
+}
+.page-content{
+    display: grid;/*задается гибкая разметка*/
+    grid-template-columns: 9fr 3fr;/*задается колличество частей, колонок и их вес*/
+    grid-column-gap: 30px; /*воздух между колонками*/
+}
+.card-image{
+    border-radius: 10px;/*скругление*/
+    width: 264px;/*ширина*/
+    height: 178px;/*высота*/
+    object-fit: cover;/*образка для картинки если она имеет другие размеры*/
+}
+.cards{
+    display: flex;/*блоки становятся в один ряд*/
+    flex-wrap: wrap;/*если не помещаются, то переносятся на другой ряд*/
+    /*justify-content: space-between; карточки разбрасываются по краям*/
+}
+.card{
+    margin-bottom: 20px;/*нижний отступ у карточек*/
+    margin-right: 15px;/*отступ справа*/
+    }
+/*.cart:not(:nth-child(3n)){
+    margin-right: 20px; отступ для всех кроме каждого третьего*/
+}
+.card-title{
+    font-size: 16px;/*высота шрифта*/
+    line-height: 19px;/*?*/
+    color: #256eeb;/*цвет шрифта*/
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.card-header{
+    display: flex;/*блоки в одну линию*/
+    justify-content: space-between;/*блоки раздвинулись по краям*/
+    align-items: center;/*вырвнивание по центру*/
+}
+.like{
+    background-color: #fff;/*цвет фона*/
+    border: none;/*рамка отключина*/
+    cursor: pointer;/*при наведении курсор становится рукой*/
+    margin-left: 15px;
+}
+.card-link{
+    text-decoration: none;
+}
+.card-price{
+    font-size: 16px;/**/
+    line-height: 19px;/**/
+    margin-bottom: 10px;/**/
+    display: block;/*делаем блочным элементом*/
+}
+.card-text{
+    font-size: 14px;/**/
+    line-height: 16px;/**/
+    color:#c4c4c4;/**/
+    margin-bottom: 4px;/**/
+    margin-top: 0;/**/
+}
+.sidebar .page-title{
+    font-size: 18px;
+    line-height: 21px;
+}
+.service{
+    margin-bottom: 25px;
+}
+.service-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.service-text{
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 217px; /*ограничиваем текст шириной*/
+}
+.footer-text{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c4c4c4;
+    margin-bottom: 5px;
+ }
+ .footer-menu{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     margin-bottom: 16px;
+ }
+ .footer-link{
+     display: inline-block;
+     color: inherit;
+     text-decoration: none;
+     margin-bottom: 5px;
+ }
